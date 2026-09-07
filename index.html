@@ -28,57 +28,86 @@
   </div>
 </header>
 
-<main class="wrap">
+<main class="wrap-wide">
 
-  <section class="hero">
-    <div class="hero-grid">
-      <div class="hero-photo">
-        <!-- Replace assets/images/headshot.jpg with your photo (square, at least 300x300px) -->
-        <img src="assets/images/headshot.jpg" alt="Portrait of Md Juwel Ahmed Sarker" onerror="this.style.display='none'">
+  <div class="profile-grid">
+
+    <aside class="sidebar">
+      <!-- Replace assets/images/headshot.jpg with your photo (square, at least 500x500px) -->
+      <img class="sidebar-photo" src="assets/images/headshot.jpg" alt="Portrait of Md Juwel Ahmed Sarker" onerror="this.style.display='none'">
+
+      <h1>Md Juwel Ahmed Sarker</h1>
+      <p class="sidebar-role">Ph.D. Candidate, Education Policy</p>
+      <p class="sidebar-dept">Department of Education Reform</p>
+      <p class="sidebar-univ">University of Arkansas</p>
+
+      <hr class="sidebar-rule">
+
+      <div class="sidebar-contact">
+        <div>&#9993;&nbsp; <a href="mailto:sarker@uark.edu">sarker@uark.edu</a></div>
+        <div>&#128205;&nbsp; Fayetteville, AR</div>
       </div>
-      <div class="hero-text">
-        <h1>Md Juwel Ahmed Sarker</h1>
-        <p class="hero-role"><strong>Ph.D. Candidate, Education Policy</strong> — University of Arkansas</p>
-        <p class="lede">I study school finance and the economics of education &mdash; how consolidation, funding, and labor markets shape student outcomes.</p>
-        <p class="tag-row">
-          <span class="tag">School Finance</span>
-          <span class="tag">Econ of Education</span>
-          <span class="tag">Teacher Labor Markets</span>
-          <span class="tag">ML for Policy</span>
-        </p>
-        <div class="hero-links">
-          <a href="assets/files/Sarker_CV.pdf">Download CV (PDF)</a>
-          <a href="mailto:sarker@uark.edu">sarker@uark.edu</a>
+
+      <div class="sidebar-links">
+        <a class="btn-block" href="assets/files/Sarker_CV.pdf">CV (PDF)</a>
+        <a class="btn-block btn-block-outline" href="mailto:sarker@uark.edu">Email</a>
+        <!-- Add more pill buttons here once you have real URLs, e.g.:
+        <a class="pill-btn" href="https://scholar.google.com/...">Google Scholar</a>
+        <a class="pill-btn" href="https://orcid.org/...">ORCID</a>
+        -->
+      </div>
+    </aside>
+
+    <article class="profile-main">
+      <h2 class="profile-heading">About</h2>
+      <p>I am a Ph.D. Candidate in Education Policy at the University of Arkansas, where I am also a Graduate Assistant in the Department of Education Reform. My research applies causal inference and quantitative methods to questions in school finance, teacher labor markets, and higher education, with the goal of producing evidence that is directly useful to policymakers and school system leaders. My dissertation, <em>"Making School Dollars Meaningful,"</em> is chaired by Dr. Josh B. McGee.</p>
+      <p>Before beginning my Ph.D., I was an Assistant Professor of Development Studies at Hajee Mohammad Danesh Science and Technology University in Dinajpur, Bangladesh, where I also served as Department Chairman. Earlier in my career I worked as a program officer, research associate, and policy consultant on development and education projects in Bangladesh.</p>
+
+      <div class="card-row">
+        <div class="card">
+          <h3>Research Interests</h3>
+          <div class="pill-group">
+            <span class="pill">School Finance</span>
+            <span class="pill">Economics of Education</span>
+            <span class="pill">Teacher Labor Markets</span>
+          </div>
+          <div class="pill-group">
+            <span class="pill pill-outline">Higher Ed &amp; Employment</span>
+            <span class="pill pill-outline">ML for Education Policy</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Education</h3>
+          <ul class="timeline-list">
+            <li><span class="timeline-degree">Ph.D., Education Policy<br><span class="muted small">University of Arkansas</span></span><span class="timeline-year">2027</span></li>
+            <li><span class="timeline-degree">M.Econ, Development Economics<br><span class="muted small">Dhaka School of Economics</span></span><span class="timeline-year">2018</span></li>
+            <li><span class="timeline-degree">M.S.S., Development Studies<br><span class="muted small">University of Dhaka</span></span><span class="timeline-year">2012</span></li>
+            <li><span class="timeline-degree">B.S.S. (Honors), Development Studies<br><span class="muted small">University of Dhaka</span></span><span class="timeline-year">2011</span></li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section id="about">
-    <p class="lede">Ph.D. Candidate at the University of Arkansas's Department of Education Reform, finishing a dissertation on school district consolidation and school finance. Previously an Assistant Professor of Development Studies in Bangladesh. <a href="cv.html">Full CV &rarr;</a></p>
-  </section>
+      <h2 class="profile-heading" style="margin-top:40px;">Job Market Paper</h2>
+      <div class="jmp-box">
+        <p class="entry-title mt-0">"When Small Districts Disappear: Fiscal Consequences of Consolidation in Arkansas"</p>
+        <div class="entry-meta">with Josh B. McGee &middot; presented at AEFP 2026, forthcoming SREE &amp; ABFM 2026</div>
+        <a class="btn" href="research.html">Read more &rarr;</a>
+      </div>
 
-  <section id="jmp-preview">
-    <h2>Job Market Paper</h2>
-    <div class="jmp-box">
-      <p class="entry-title mt-0">"When Small Districts Disappear: Fiscal Consequences of Consolidation in Arkansas"</p>
-      <div class="entry-meta">with Josh B. McGee &middot; presented at AEFP 2026, forthcoming SREE &amp; ABFM 2026</div>
-      <a class="btn" href="research.html">Read more &rarr;</a>
-    </div>
-  </section>
+      <h2 class="profile-heading" style="margin-top:40px;">Recent Recognition</h2>
+      <ul class="plain-list">
+        <li><span class="year-col">2026&ndash;27</span> School Finance Fellow, EdFund</li>
+        <li><span class="year-col">2023&ndash;</span> Doctoral Academy Fellow, University of Arkansas</li>
+      </ul>
+    </article>
 
-  <section id="fellowships">
-    <h2>Recent Recognition</h2>
-    <ul class="plain-list">
-      <li><span class="year-col">2026&ndash;27</span> School Finance Fellow, EdFund</li>
-      <li><span class="year-col">2023&ndash;</span> Doctoral Academy Fellow, University of Arkansas</li>
-    </ul>
-  </section>
+  </div>
 
 </main>
 
 <footer class="site-footer">
-  <div class="wrap">
+  <div class="wrap-wide">
     <p>&copy; <span id="year">2026</span> Md Juwel Ahmed Sarker &middot; 212 Graduate Education Building, University of Arkansas, Fayetteville, AR 72701</p>
     <p><a href="mailto:sarker@uark.edu">sarker@uark.edu</a> &middot; Built with GitHub Pages</p>
   </div>

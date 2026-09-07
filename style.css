@@ -123,9 +123,9 @@ nav.site-nav a[aria-current="page"] {
 }
 
 .hero-photo img {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
+  width: 320px;
+  height: 320px;
+  border-radius: 14px;
   object-fit: cover;
   border: 1px solid var(--line);
 }
@@ -332,6 +332,6 @@ footer.site-footer a:hover { color: var(--accent); }
   .header-inner { flex-wrap: wrap; }
   nav.site-nav ul { gap: 14px; flex-wrap: wrap; }
   .hero-grid { flex-direction: column; align-items: flex-start; }
-  .hero-photo img { width: 140px; height: 140px; }
+  .hero-photo img { width: 220px; height: 220px; border-radius: 12px; }
   .hero-text h1 { font-size: 25px; }
 }

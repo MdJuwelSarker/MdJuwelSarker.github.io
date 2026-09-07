@@ -1,4 +1,4 @@
-# Juwel Sarker — Personal Academic Website
+# Md Juwel Ahmed Sarker — Personal Academic Website
 
 A clean, text-forward academic website: About, Research (job market paper, publications, working papers), Teaching, CV, and Contact. Plain HTML/CSS — no build tools, so you can edit any page directly in GitHub's website.
 

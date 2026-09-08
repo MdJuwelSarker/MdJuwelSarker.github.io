@@ -34,7 +34,7 @@ body {
 a {
   color: var(--accent);
   text-decoration: none;
-  border-bottom: 1px solid rgba(157, 34, 53, 0.35);
+  border-bottom: 1px solid rgba(43, 45, 51, 0.35);
   transition: border-color 0.15s ease, color 0.15s ease;
 }
 
@@ -116,7 +116,7 @@ a:hover {
 }
 
 .sidebar-contact div { margin-bottom: 8px; }
-.sidebar-contact a { border-bottom: 1px solid rgba(157,34,53,0.35); }
+.sidebar-contact a { border-bottom: 1px solid rgba(43,45,51,0.35); }
 
 .sidebar-links {
   display: flex;
@@ -146,7 +146,7 @@ a:hover {
   border: 1px solid var(--accent);
 }
 
-.btn-block-outline:hover { background: rgba(157,34,53,0.06); }
+.btn-block-outline:hover { background: rgba(43,45,51,0.06); }
 
 .profile-heading {
   font-family: var(--font-sans);
@@ -190,7 +190,7 @@ a:hover {
   font-weight: 600;
   padding: 5px 12px;
   border-radius: 999px;
-  background: rgba(157, 34, 53, 0.09);
+  background: rgba(43, 45, 51, 0.09);
   color: var(--accent);
 }
 
@@ -355,7 +355,7 @@ nav.site-nav a[aria-current="page"] {
   margin-top: 14px;
 }
 
-.hero-links a { border-bottom: 1px solid rgba(157,34,53,0.35); }
+.hero-links a { border-bottom: 1px solid rgba(43,45,51,0.35); }
 
 /* ---------- Sections ---------- */
 
@@ -501,7 +501,7 @@ p { margin: 0 0 16px; }
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent);
-  background: rgba(157, 34, 53, 0.08);
+  background: rgba(43, 45, 51, 0.08);
   border-radius: 3px;
   padding: 2px 8px;
   margin: 0 6px 8px 0;
@@ -632,7 +632,7 @@ p { margin: 0 0 16px; }
   padding: 9px 19px;
 }
 
-.btn-outline:hover { background: rgba(157,34,53,0.06); }
+.btn-outline:hover { background: rgba(43,45,51,0.06); }
 
 /* ---------- Footer ---------- */
 

@@ -422,12 +422,12 @@ p { margin: 0 0 16px; }
 }
 
 .thumb-entry .entry-thumb {
-  flex: 0 0 130px;
+  flex: 0 0 200px;
 }
 
 .thumb-entry .entry-thumb img {
-  width: 130px;
-  height: 90px;
+  width: 200px;
+  height: 113px;
   object-fit: cover;
   border-radius: 6px;
   border: 1px solid var(--line);

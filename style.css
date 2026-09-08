@@ -447,6 +447,19 @@ p { margin: 0 0 16px; }
   .thumb-entry .entry-thumb img { width: 140px; height: 96px; }
 }
 
+.thumb-entry .entry-thumb.entry-thumb-lg {
+  flex: 0 0 320px;
+}
+
+.thumb-entry .entry-thumb.entry-thumb-lg img {
+  width: 320px;
+  height: 180px;
+}
+
+@media (max-width: 480px) {
+  .thumb-entry .entry-thumb.entry-thumb-lg img { width: 220px; height: 124px; }
+}
+
 .entry-gallery {
   display: flex;
   gap: 10px;

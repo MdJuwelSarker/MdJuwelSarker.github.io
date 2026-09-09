@@ -416,13 +416,12 @@ p { margin: 0 0 16px; }
 /* ---------- Thumbnail entries (photo beside text, "projects list" style) ---------- */
 
 .thumb-entry {
-  display: flex;
-  gap: 18px;
-  align-items: flex-start;
+  overflow: hidden; /* clearfix: keeps the floated photo contained inside the entry */
 }
 
 .thumb-entry .entry-thumb {
-  flex: 0 0 200px;
+  float: left;
+  margin: 2px 18px 10px 0;
 }
 
 .thumb-entry .entry-thumb img {
@@ -434,21 +433,15 @@ p { margin: 0 0 16px; }
   display: block;
 }
 
-.thumb-entry .entry-body {
-  flex: 1 1 auto;
-  min-width: 0;
-}
-
-.thumb-entry .entry-title { color: var(--accent); }
+.thumb-entry .entry-title { color: var(--accent); margin-top: 0; }
 
 @media (max-width: 480px) {
-  .thumb-entry { flex-direction: column; }
-  .thumb-entry .entry-thumb { flex-basis: auto; }
+  .thumb-entry .entry-thumb { float: none; margin-right: 0; }
   .thumb-entry .entry-thumb img { width: 140px; height: 96px; }
 }
 
 .thumb-entry .entry-thumb.entry-thumb-lg {
-  flex: 0 0 320px;
+  margin: 2px 22px 12px 0;
 }
 
 .thumb-entry .entry-thumb.entry-thumb-lg img {
@@ -457,6 +450,7 @@ p { margin: 0 0 16px; }
 }
 
 @media (max-width: 480px) {
+  .thumb-entry .entry-thumb.entry-thumb-lg { float: none; margin-right: 0; }
   .thumb-entry .entry-thumb.entry-thumb-lg img { width: 220px; height: 124px; }
 }
 

@@ -173,6 +173,8 @@ a:hover {
 
 .icon-link:hover { background: var(--accent); color: #fff !important; }
 
+.icon-link svg { width: 18px; height: 18px; fill: currentColor; }
+
 .profile-heading {
   font-family: var(--font-sans);
   font-size: 22px;

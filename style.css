@@ -148,6 +148,31 @@ a:hover {
 
 .btn-block-outline:hover { background: rgba(43,45,51,0.06); }
 
+.icon-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.icon-link {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--accent);
+  color: var(--accent) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.icon-link:hover { background: var(--accent); color: #fff !important; }
+
 .profile-heading {
   font-family: var(--font-sans);
   font-size: 22px;
@@ -174,6 +199,76 @@ a:hover {
 
 .card h3 {
   margin: 0 0 12px;
+}
+
+.testimonial-gallery {
+  margin-top: 24px;
+}
+
+.testimonial-feature {
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--paper-alt);
+  padding: 46px 56px 30px;
+  margin-bottom: 26px;
+}
+
+.testimonial-feature blockquote {
+  margin: 0 0 26px;
+  max-width: 620px;
+  font-family: var(--font-serif);
+  font-size: 21px;
+  line-height: 1.65;
+  color: var(--ink);
+}
+
+.testimonial-feature blockquote::before { content: "\201C"; }
+.testimonial-feature blockquote::after { content: "\201D"; }
+
+.testimonial-feature .t-rule {
+  width: 42px;
+  height: 1px;
+  background: var(--line);
+  margin-bottom: 14px;
+}
+
+.testimonial-feature cite {
+  display: block;
+  font-style: normal;
+}
+
+.testimonial-feature .t-course {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.testimonial-feature .t-context {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  margin-top: 3px;
+}
+
+.testimonial-feature .t-number {
+  position: absolute;
+  right: 22px;
+  bottom: 18px;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  opacity: 0.65;
+}
+
+@media (max-width: 600px) {
+  .testimonial-feature { padding: 34px 26px 24px; }
+  .testimonial-feature blockquote { font-size: 18px; }
+  .testimonial-feature .t-number { right: 18px; bottom: 14px; }
 }
 
 .pill-group {

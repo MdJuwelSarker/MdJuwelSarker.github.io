@@ -150,32 +150,44 @@ a:hover {
 
 .icon-links {
   display: flex;
+  flex-direction: column;
   gap: 10px;
-  margin-top: 12px;
+  margin-top: 14px;
 }
 
 .icon-link {
-  width: 38px;
-  height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--ink) !important;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.icon-link:hover .icon-badge { background: var(--accent); color: #fff; }
+.icon-link:hover .icon-label { color: var(--accent); }
+
+.icon-badge {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   border: 1px solid var(--accent);
-  color: var(--accent) !important;
+  color: var(--accent);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-sans);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  text-decoration: none;
   transition: background 0.15s ease, color 0.15s ease;
 }
 
-.icon-link:hover { background: var(--accent); color: #fff !important; }
+.icon-badge svg { width: 16px; height: 16px; fill: currentColor; }
 
-.icon-link svg { width: 18px; height: 18px; fill: currentColor; }
+.icon-badge img { width: 16px; height: 16px; object-fit: contain; }
 
-.icon-link img { width: 18px; height: 18px; object-fit: contain; }
+.icon-label { transition: color 0.15s ease; }
 
 .profile-heading {
   font-family: var(--font-sans);

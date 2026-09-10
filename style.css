@@ -175,6 +175,8 @@ a:hover {
 
 .icon-link svg { width: 18px; height: 18px; fill: currentColor; }
 
+.icon-link img { width: 18px; height: 18px; object-fit: contain; }
+
 .profile-heading {
   font-family: var(--font-sans);
   font-size: 22px;

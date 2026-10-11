@@ -1235,3 +1235,4 @@ html{scroll-behavior:smooth}
 .cv-note a{color:var(--gold-text)}
 @media (max-width:900px){.cv-two{grid-template-columns:1fr}.cv-cl li{grid-template-columns:1fr;gap:2px}}
 .cv-hero .btn{display:inline-block;background:var(--gold);color:var(--navy);font-weight:600;padding:11px 20px;border-radius:6px;text-decoration:none;border:0}
+.tc-hero.svc-hero h1{font-size:clamp(34px,4vw,46px);margin:28px 0 14px}

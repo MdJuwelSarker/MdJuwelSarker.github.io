@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=20261011">
 </head>
 <body>
 
@@ -18,7 +18,8 @@
     <a class="site-name" href="index.html">Md Juwel Ahmed Sarker</a>
     <nav class="site-nav">
       <ul>
-        <li><a href="index.html" aria-current="page">About</a></li>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="teaching.html">Teaching</a></li>
         <li><a href="service.html">Service</a></li>
@@ -87,13 +88,31 @@
     </aside>
 
     <article class="profile-main">
-      <h2 class="profile-heading">About</h2>
-      <p>I am a Ph.D. candidate in Education Policy at the University of Arkansas, where I am a Doctoral Academy Fellow, and a School Finance Fellow with EdFund. My research spans education finance, the economics of education, teacher labor markets, and higher education, examining the institutional and policy factors that shape how educational resources are allocated.</p>
-      <p>I use causal inference, applied econometrics, and machine learning to study how education policy and governance shape the decisions and outcomes of students, educators, and school systems. My work is motivated by a simple question: How can rigorous empirical evidence help policymakers and education leaders make better decisions? My current research examines the fiscal consequences and efficiency implications of small-district consolidation in Arkansas.</p>
-      <p>Before beginning my doctoral studies, I served as an Assistant Professor and Chair of the Department of Development Studies at Hajee Mohammad Danesh Science and Technology University (HSTU) in Dinajpur, Bangladesh, and spent more than six years working in the nonprofit sector. Leading a department with limited resources and working directly with underserved communities &mdash; not unlike the one I grew up in &mdash; taught me how often education leaders must make consequential decisions without the evidence they need. Closing that gap is what motivates my research today.</p>
+      <p class="home-lead">I study how education policy and finance shape the decisions and outcomes of students, educators, and school systems.</p>
+      <p class="home-links"><a class="btn" href="about.html">More about me &rarr;</a> <a class="btn" href="research.html">My research &rarr;</a></p>
 
-      <h2 class="profile-heading journey-heading">How I Got Here</h2>
-      <ol class="journey">
+      <h2 class="profile-heading home-sub">Research Interests</h2>
+      <div class="pill-group">
+        <span class="pill">School Finance</span>
+        <span class="pill">Economics of Education</span>
+        <span class="pill">Teacher Labor Markets</span>
+        <span class="pill pill-outline">Higher Ed &amp; Employment</span>
+        <span class="pill pill-outline">ML for Education Policy</span>
+      </div>
+
+      <h2 class="profile-heading home-sub">Job Market Paper</h2>
+      <div class="jmp-box">
+        <p class="entry-title mt-0">"When Small Districts Disappear: Fiscal Consequences of Consolidation in Arkansas"</p>
+        <div class="entry-meta">with Josh B. McGee &middot; presented at AEFP 2026, forthcoming SREE &amp; ABFM 2026</div>
+        <a class="btn" href="research.html">Read more &rarr;</a>
+      </div>
+    </article>
+
+  </div>
+
+  <section class="journey-section" aria-labelledby="journey-title">
+    <h2 class="profile-heading" id="journey-title">How I Got Here</h2>
+<ol class="journey journey-h">
         <li>
           <span class="journey-years">2013&ndash;15</span>
           <div class="journey-body">
@@ -135,47 +154,7 @@
           </div>
         </li>
       </ol>
-
-      <div class="card-row">
-        <div class="card">
-          <h3>Research Interests</h3>
-          <div class="pill-group">
-            <span class="pill">School Finance</span>
-            <span class="pill">Economics of Education</span>
-            <span class="pill">Teacher Labor Markets</span>
-          </div>
-          <div class="pill-group">
-            <span class="pill pill-outline">Higher Ed &amp; Employment</span>
-            <span class="pill pill-outline">ML for Education Policy</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Education</h3>
-          <ul class="timeline-list">
-            <li><span class="timeline-degree">Ph.D., Education Policy<br><span class="muted small">University of Arkansas</span></span><span class="timeline-year">2027</span></li>
-            <li><span class="timeline-degree">M.Econ, Development Economics<br><span class="muted small">Dhaka School of Economics</span></span><span class="timeline-year">2018</span></li>
-            <li><span class="timeline-degree">M.S.S., Development Studies<br><span class="muted small">University of Dhaka</span></span><span class="timeline-year">2012</span></li>
-            <li><span class="timeline-degree">B.S.S. (Honors), Development Studies<br><span class="muted small">University of Dhaka</span></span><span class="timeline-year">2011</span></li>
-          </ul>
-        </div>
-      </div>
-
-      <h2 class="profile-heading" style="margin-top:40px;">Job Market Paper</h2>
-      <div class="jmp-box">
-        <p class="entry-title mt-0">"When Small Districts Disappear: Fiscal Consequences of Consolidation in Arkansas"</p>
-        <div class="entry-meta">with Josh B. McGee &middot; presented at AEFP 2026, forthcoming SREE &amp; ABFM 2026</div>
-        <a class="btn" href="research.html">Read more &rarr;</a>
-      </div>
-
-      <h2 class="profile-heading" style="margin-top:40px;">Recent Recognition</h2>
-      <ul class="plain-list">
-        <li><span class="year-col">2026&ndash;27</span> School Finance Fellow, EdFund</li>
-        <li><span class="year-col">2023&ndash;</span> Doctoral Academy Fellow, University of Arkansas</li>
-      </ul>
-    </article>
-
-  </div>
+  </section>
 
 </main>
 

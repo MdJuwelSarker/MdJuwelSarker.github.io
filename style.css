@@ -1254,3 +1254,34 @@ html{scroll-behavior:smooth}
 @media (max-width:700px){.ct-meta{grid-template-columns:1fr}.ct-panel{padding:28px 22px}}
 .ct-hero{margin:0}
 .ct-panel .btn{display:inline-block;background:var(--navy);color:#fff;font-weight:600;padding:11px 22px;border-radius:6px;text-decoration:none;border:0}
+
+/* Teaching: compact table */
+.tc-tbl{background:#fff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden}
+.tc-row{display:grid;grid-template-columns:92px 84px minmax(0,1fr) 150px;gap:14px;align-items:baseline;padding:11px 18px;border-top:1px solid #eef0f3;font-size:14.5px;line-height:1.45;background:none;border-left:0;border-right:0;border-bottom:0;border-radius:0}
+.tc-row:first-child{border-top:0}
+.tc-row[hidden]{display:none}
+.tc-row .tc-lvl{margin:0;font:600 11.5px/1.4 Inter,sans-serif;letter-spacing:.04em;text-transform:uppercase;color:var(--gold-text)}
+.tc-row .tc-cd{font-weight:600;color:var(--navy)}
+.tc-row .tc-tt small{display:block;color:#6b7280;font-size:13px;margin-top:2px}
+.tc-row .tc-tm{font-size:13.5px;color:#6b7280}
+.tc-note{font-size:14px;line-height:1.6;color:#4b5563;margin:16px 0 0}
+.tc-main .tc-grid3:has(.tc-quote){grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:900px){.tc-row{grid-template-columns:1fr;gap:2px}.tc-main .tc-grid3:has(.tc-quote){grid-template-columns:1fr}}
+
+/* Teaching: tabs + level columns */
+.tc-tabs{display:flex;flex-wrap:wrap;gap:6px;margin:0}
+.tc-tab{font:600 14px/1 'Inter',sans-serif;padding:11px 18px;border:0;border-radius:8px 8px 0 0;background:#eef0f3;color:#4b5563;cursor:pointer}
+.tc-tab.on{background:var(--navy);color:#fff}
+.tc-tab:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.tc-panel{border-radius:0 10px 10px 10px;padding:24px 28px}
+.tc-panel[hidden]{display:none}
+.tc-panel p{font-size:15.5px;line-height:1.75}
+.tc-lv{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-bottom:6px}
+.tc-lv-col{background:#fff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden}
+.tc-lv-col h3{margin:0;padding:10px 14px;background:var(--navy);color:var(--gold);font:600 12px/1.2 'Inter',sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.tc-lv-it{padding:11px 14px;border-top:1px solid #eef0f3;font-size:13.5px;line-height:1.45}
+.tc-lv-it b{display:block;color:var(--navy);font-size:12.5px}
+.tc-lv-it i{display:block;font-style:normal;color:var(--gold-text);font-size:12px;margin-top:2px}
+.tc-lv-it small{display:block;color:#6b7280;font-size:12px;margin-top:3px}
+@media (max-width:1100px){.tc-lv{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:700px){.tc-lv{grid-template-columns:1fr}}

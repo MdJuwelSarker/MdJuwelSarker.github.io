@@ -1254,3 +1254,16 @@ html{scroll-behavior:smooth}
 @media (max-width:700px){.ct-meta{grid-template-columns:1fr}.ct-panel{padding:28px 22px}}
 .ct-hero{margin:0}
 .ct-panel .btn{display:inline-block;background:var(--navy);color:#fff;font-weight:600;padding:11px 22px;border-radius:6px;text-decoration:none;border:0}
+
+/* Teaching: compact table */
+.tc-tbl{background:#fff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden}
+.tc-row{display:grid;grid-template-columns:92px 84px minmax(0,1fr) 150px;gap:14px;align-items:baseline;padding:11px 18px;border-top:1px solid #eef0f3;font-size:14.5px;line-height:1.45;background:none;border-left:0;border-right:0;border-bottom:0;border-radius:0}
+.tc-row:first-child{border-top:0}
+.tc-row[hidden]{display:none}
+.tc-row .tc-lvl{margin:0;font:600 11.5px/1.4 Inter,sans-serif;letter-spacing:.04em;text-transform:uppercase;color:var(--gold-text)}
+.tc-row .tc-cd{font-weight:600;color:var(--navy)}
+.tc-row .tc-tt small{display:block;color:#6b7280;font-size:13px;margin-top:2px}
+.tc-row .tc-tm{font-size:13.5px;color:#6b7280}
+.tc-note{font-size:14px;line-height:1.6;color:#4b5563;margin:16px 0 0}
+.tc-main .tc-grid3:has(.tc-quote){grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:900px){.tc-row{grid-template-columns:1fr;gap:2px}.tc-main .tc-grid3:has(.tc-quote){grid-template-columns:1fr}}

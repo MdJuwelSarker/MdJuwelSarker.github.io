@@ -1218,3 +1218,4 @@ html{scroll-behavior:smooth}
 
 .hb-left{display:flex;flex-direction:column;gap:24px;min-width:0}
 .hb-news-in{margin-top:0}
+.hb-left .hb-find{margin-top:0}

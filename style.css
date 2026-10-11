@@ -1314,3 +1314,6 @@ html{scroll-behavior:smooth}
   .hb-step{grid-template-columns:1fr;row-gap:4px;padding:16px 20px}
   .hb-years,.hb-now .hb-years,.hb-step h3,.hb-step .hb-org,.hb-step p:not(.hb-org),.hb-tag{grid-column:1;grid-row:auto}
 }
+
+/* Emphasized card headings: Job market paper, My research in the news */
+.hb-jmp .hb-label,.hb-news .hb-label{display:block;width:fit-content;align-self:flex-start;font:800 14px/1.2 Inter,sans-serif;letter-spacing:.14em;color:var(--navy);padding-bottom:6px;border-bottom:3px solid var(--gold)}

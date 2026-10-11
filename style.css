@@ -952,3 +952,53 @@ header.site-header { background: var(--navy); }
 
 .home-links + .journey-heading { margin-top: 44px; }
 .home-links .btn { background: var(--navy); }
+
+/* ---------- Timeline: horizontal on wide screens ---------- */
+
+.home-sub { margin-top: 36px; }
+
+.journey-section { padding: 8px 0 64px; }
+
+@media (min-width: 960px) {
+  .journey-h {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+    padding-top: 6px;
+  }
+
+  .journey-h::before {
+    left: 0;
+    right: 0;
+    top: 41px;
+    bottom: auto;
+    width: auto;
+    height: 2px;
+  }
+
+  .journey-h li {
+    display: block;
+    padding: 0;
+  }
+
+  .journey-h li::before {
+    left: 0;
+    top: 34px;
+  }
+
+  .journey-h .journey-years {
+    display: block;
+    text-align: left;
+    padding: 0 0 22px;
+    font-size: 14px;
+  }
+
+  .journey-h .journey-body { padding-top: 22px; }
+}
+
+.journey-section h2.profile-heading {
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 22px;
+  margin: 0 0 24px;
+}

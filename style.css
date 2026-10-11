@@ -1325,4 +1325,4 @@ html{scroll-behavior:smooth}
 #in-progress ~ .rs-row .entry-detail.muted,#in-progress ~ .research-card .entry-detail.muted{text-align:left}
 
 /* Research: justified publication summaries (citations stay left-aligned) */
-#publications ~ .entry .entry-detail:not(.muted){text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+#publications ~ .entry .entry-detail:not(.muted),#publications ~ .rs-row .entry-detail:not(.muted),#under-review ~ .rs-row .entry-detail:not(.muted){text-align:justify;hyphens:auto;-webkit-hyphens:auto}

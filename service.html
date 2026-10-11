@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261043">
+<link rel="stylesheet" href="style.css?v=20261044">
 </head>
 <body>
 
@@ -30,12 +30,31 @@
   </div>
 </header>
 
-<main class="wrap">
+<section class="tc-hero" id="mentorship">
+  <div class="tc-hero-in">
+    <div class="tc-kick">Service</div>
+    <h1>Service</h1>
+    <p>I take service &mdash; to the field, to my institution, and to the broader academic community &mdash; as part of the job, not an add-on to it. Below is a summary of my ongoing professional and departmental service.</p>
+    <div class="tc-stats">
+      <div><b>15+</b>Students mentored into funded programs</div>
+      <div><b>4</b>Journals reviewed for</div>
+      <div><b>10,000+</b>BOLS community members</div>
+    </div>
+  </div>
+</section>
 
-  <section style="margin-top:48px;">
-    <h2>Service</h2>
-    <p class="lede">I take service &mdash; to the field, to my institution, and to the broader academic community &mdash; as part of the job, not an add-on to it. Below is a summary of my ongoing professional and departmental service.</p>
-  </section>
+<main class="rs-layout tc-main">
+
+  <aside class="rs-side" aria-label="On this page">
+    <div class="rs-side-label">On this page</div>
+    <nav class="rs-idx">
+      <a href="#mentorship" class="on">Mentorship</a>
+      <a href="#reviewing">Reviewing &amp; memberships</a>
+      <a href="#university">University &amp; departmental</a>
+    </nav>
+  </aside>
+
+  <div class="rs-content">
 
   <section>
     <h2>Mentorship</h2>
@@ -43,6 +62,7 @@
   </section>
 
   <section>
+    <h2 id="reviewing">Reviewing &amp; Memberships</h2>
     <div class="card-row">
       <div class="card">
         <h3>Manuscript Reviewer</h3>
@@ -66,13 +86,24 @@
   </section>
 
   <section>
-    <h2>University &amp; Departmental Service</h2>
+    <h2 id="university">University &amp; Departmental Service</h2>
 
     <div class="entry">
       <div class="entry-meta">2025&ndash;2026 &middot; Department of Education Reform, University of Arkansas</div>
       <p class="entry-title">Department Representative, Graduate-Professional Student Congress (GPSC)</p>
       <p class="entry-detail">I represent the graduate students of the Department of Education Reform within the university's Graduate-Professional Student Congress, serving as a liaison between my department and the broader graduate student body. In this role, I relay departmental concerns and priorities to GPSC, participate in decisions affecting graduate student funding, policy, and campus life, and keep my department informed of university-wide initiatives and opportunities relevant to graduate students.</p>
     </div>
+
+    <div class="entry">
+      <div class="entry-meta">2022&ndash;2023 &middot; Hajee Mohammad Danesh Science and Technology University</div>
+      <p class="entry-title">Assistant Proctor</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-meta">2021&ndash;2022 &middot; Hajee Mohammad Danesh Science and Technology University</div>
+      <p class="entry-title">Assistant Hall Superintendent</p>
+    </div>
+
 
     <div class="entry thumb-entry">
       <div class="entry-thumb entry-thumb-lg">
@@ -117,6 +148,7 @@
     </div>
   </section>
 
+  </div>
 </main>
 
 <footer class="site-footer">
@@ -127,5 +159,10 @@
 </footer>
 
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+(function(){try{var links=[].slice.call(document.querySelectorAll('.rs-idx a'));var ids=links.map(function(a){return a.getAttribute('href').slice(1)});var els=ids.map(function(i){return document.getElementById(i)});
+function spy(){var y=window.scrollY+140,cur=0;els.forEach(function(e,i){if(e&&e.getBoundingClientRect().top+window.scrollY<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}
+window.addEventListener('scroll',spy,{passive:true});spy()}catch(e){}})();
+</script>
 </body>
 </html>

@@ -1317,3 +1317,5 @@ html{scroll-behavior:smooth}
 
 /* Emphasized card headings: Job market paper, My research in the news */
 .hb-jmp .hb-label,.hb-news .hb-label{display:block;width:fit-content;align-self:flex-start;font:800 14px/1.2 Inter,sans-serif;letter-spacing:.14em;color:var(--navy);padding-bottom:6px;border-bottom:3px solid var(--gold)}
+
+.hb-finding{margin:2px 0 12px;font:400 17px/1.55 Inter,sans-serif;color:#2b2b2b}

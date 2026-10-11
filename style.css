@@ -1091,3 +1091,4 @@ header.site-header { background: var(--navy); }
 .jmp-figures figure{margin:0;background:#fff;border:1px solid #e8e3d9;border-radius:12px;padding:16px;box-shadow:0 4px 14px rgba(19,28,43,.06)}
 .jmp-figures img{display:block;width:100%;height:auto}
 .jmp-figures figcaption{margin-top:12px;font-size:14px;line-height:1.55;color:#4a4a4a}
+.hb-badge svg.hb-stroke{fill:none;stroke:var(--navy);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}

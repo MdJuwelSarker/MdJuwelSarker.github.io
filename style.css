@@ -1142,3 +1142,48 @@ html{scroll-behavior:smooth}
 .rs-hero-figs figure a{cursor:zoom-in}
 .rs-row .jmp-figures figure::after{content:"Click to enlarge";display:block;margin-top:6px;font:500 11px Inter,sans-serif;color:#9ca3af}
 @media (max-width:900px){.rs-row{grid-template-columns:1fr}}
+
+/* ---------- Teaching page ---------- */
+.tc-hero{margin:0;background:var(--navy);color:#fff;padding:24px 24px 64px}
+.tc-hero-in{max-width:1120px;margin:0 auto;padding:0 16px}
+.tc-kick{font:600 12px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:32px 0 16px}
+.tc-hero h1{font-family:"Source Serif 4",Georgia,serif;font-weight:500;font-size:clamp(24px,2.8vw,34px);line-height:1.35;margin:0 0 18px;max-width:900px;color:#fff}
+.tc-hero p{font-size:16.5px;line-height:1.75;color:#c9d1de;max-width:860px;margin:0 0 28px}
+.tc-stats{display:flex;flex-wrap:wrap;gap:16px 56px;border-top:1px solid #2b3a52;padding-top:24px}
+.tc-stats div{font:500 13px Inter,sans-serif;color:#aab4c4;text-transform:uppercase;letter-spacing:.08em}
+.tc-stats b{display:block;font:600 34px "Source Serif 4",Georgia,serif;color:var(--gold);letter-spacing:0;text-transform:none;margin-bottom:2px}
+.tc-main{max-width:1120px;margin:0 auto;padding:0 40px 64px}
+.tc-main section h2{font-family:"Source Serif 4",Georgia,serif;font-size:28px;font-weight:600;text-transform:none;letter-spacing:0;color:var(--navy);display:inline-block;border-bottom:2px solid var(--gold);padding-bottom:10px;margin:0 0 8px}
+.tc-sub{font-size:15px;color:#6b7280;margin:8px 0 24px;max-width:760px;line-height:1.6}
+.tc-grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.tc-grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:22px}
+.tc-quote{margin:0;background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:26px 24px;display:flex;flex-direction:column}
+.tc-mark{font:600 56px/.6 "Source Serif 4",Georgia,serif;color:var(--gold);height:26px}
+.tc-quote blockquote{margin:0 0 18px;font:400 15.5px/1.65 "Source Serif 4",Georgia,serif;color:#1f2937;flex:1}
+.tc-quote figcaption{display:flex;flex-direction:column;gap:2px}
+.tc-c{font:600 13px Inter,sans-serif;color:var(--navy)}
+.tc-x{font:400 12.5px/1.5 Inter,sans-serif;color:#6b7280}
+.tc-proj{background:#fff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden}
+.tc-proj img{display:block;width:100%;aspect-ratio:2/1;object-fit:cover}
+.tc-proj-b{padding:18px 20px 22px}
+.tc-proj h3{font:600 19px "Source Serif 4",Georgia,serif;margin:0 0 8px;color:var(--navy)}
+.tc-proj p{margin:0 0 10px;font-size:14.5px;line-height:1.6;color:#374151}
+.tc-proj small{font:500 12.5px Inter,sans-serif;color:var(--gold-text)}
+.tc-crs{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:20px 22px}
+.tc-crs h3{font:600 18px "Source Serif 4",Georgia,serif;margin:0 0 6px;color:var(--navy)}
+.tc-crs p{margin:0;font-size:14.5px;line-height:1.6;color:#4b5563}
+.tc-chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+.tc-chip{font:500 13px Inter,sans-serif;padding:8px 16px;border-radius:999px;background:#fff;border:1px solid #d6dae0;color:#374151;cursor:pointer}
+.tc-chip:hover{border-color:var(--navy)}
+.tc-chip.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.tc-inst h3{font:600 20px "Source Serif 4",Georgia,serif;color:var(--navy);margin:30px 0 14px}
+.tc-ex{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:16px 18px}
+.tc-lvl{display:inline-block;font:600 11.5px Inter,sans-serif;letter-spacing:.04em;text-transform:uppercase;color:var(--gold-text);background:#fbf3df;border-radius:4px;padding:2px 8px;margin-bottom:8px}
+.tc-t{font:600 15px/1.4 Inter,sans-serif;color:var(--navy);margin:0 0 6px}
+.tc-m{font:400 13px Inter,sans-serif;color:#6b7280;margin:0}
+.tc-ex[hidden],.tc-inst[hidden]{display:none}
+.tc-main section{margin-top:56px}
+@media (max-width:900px){.tc-grid3,.tc-grid2{grid-template-columns:1fr}.tc-main{padding:0 24px 64px}}
+.tc-hero-in{padding:0 40px}
+.tc-inst + .small{margin-top:26px}
+@media (max-width:900px){.tc-hero-in{padding:0}}

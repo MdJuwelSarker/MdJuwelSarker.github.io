@@ -1215,3 +1215,7 @@ html{scroll-behavior:smooth}
 .hf-more summary{cursor:pointer;font:500 14px Inter,sans-serif;color:var(--gold-text);padding:8px 0}
 .hf-more .hf-list li:first-child{border-top:1px solid #e5e7eb}
 @media (max-width:900px){.hf-list li{grid-template-columns:1fr;gap:2px}}
+
+.hb-left{display:flex;flex-direction:column;gap:24px;min-width:0}
+.hb-news-in{margin-top:0}
+.hb-left .hb-find{margin-top:0}

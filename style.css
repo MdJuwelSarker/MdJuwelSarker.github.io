@@ -1285,3 +1285,20 @@ html{scroll-behavior:smooth}
 .tc-lv-it small{display:block;color:#6b7280;font-size:12px;margin-top:3px}
 @media (max-width:1100px){.tc-lv{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:700px){.tc-lv{grid-template-columns:1fr}}
+
+/* Teaching experience v2: institution cards, grouped by level */
+.tc2-inst{background:#fff;border:1px solid #e5e7eb;border-radius:10px;margin:0 0 16px;overflow:hidden}
+.tc2-ih{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 16px;padding:13px 20px;background:var(--navy)}
+.tc2-ih h3{margin:0;font:600 16px/1.3 'Source Serif 4',serif;color:#fff}
+.tc2-ih span{font-size:13px;color:var(--gold)}
+.tc2-cols{display:grid;grid-template-columns:1fr 1fr}
+.tc2-cols>div+div{border-left:1px solid #eef0f3}
+.tc2-g h4{margin:0;padding:9px 20px;background:#f6f4ee;font:600 11.5px/1.2 'Inter',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-text);border-top:1px solid #eef0f3}
+.tc2-cols>div>.tc2-g:first-child h4{border-top:0}
+.tc2-r{display:grid;grid-template-columns:78px minmax(0,1fr) auto;gap:12px;align-items:baseline;padding:10px 20px;border-top:1px solid #f1f2f5;font-size:14px;line-height:1.45}
+.tc2-g h4+.tc2-r{border-top:0}
+.tc2-c{font-weight:600;color:var(--navy);font-size:13px}
+.tc2-t small{display:block;color:#6b7280;font-size:12.5px;margin-top:2px}
+.tc2-m{font-size:12.5px;color:#6b7280;text-align:right;max-width:130px}
+.tc2-r1{border-top:0;grid-template-columns:96px minmax(0,1fr) auto}
+@media (max-width:900px){.tc2-cols{grid-template-columns:1fr}.tc2-cols>div+div{border-left:0}.tc2-r,.tc2-r1{grid-template-columns:70px minmax(0,1fr)}.tc2-m{grid-column:2;text-align:left;max-width:none}}

@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261014">
+<link rel="stylesheet" href="style.css?v=20261015">
 </head>
 <body>
 
@@ -34,20 +34,26 @@
 
   <section style="margin-top:48px;">
     <h2>Job Market Paper</h2>
-    <div class="research-card">
-      <div class="research-figure">
-        <!-- Once you have a figure (a chart, map, or event-study plot from the paper), replace the div below with:
-        <img src="assets/images/research/jmp-figure.png" alt="Key figure from the job market paper"> -->
-        <div class="figure-placeholder">Add a figure here<br>(e.g. a spending trend chart or map of consolidated districts)<br><span class="muted">assets/images/research/jmp-figure.png</span></div>
-      </div>
+    <div class="research-card research-card-solo">
       <div class="research-body">
         <span class="tag">Job Market Paper</span>
-        <p class="entry-title">"When Small Districts Disappear: Fiscal Consequences of Consolidation in Arkansas"</p>
+        <p class="entry-title">"When Small Districts Disappear: The Fiscal Effects of Arkansas&rsquo;s Act 60 Consolidation Mandate"</p>
         <div class="entry-meta">with Josh B. McGee &middot; EDRE Working Paper, University of Arkansas <span title="Add the working paper number once assigned">[No. TBD]</span></div>
-        <p class="entry-detail">This paper studies the fiscal consequences of school district consolidation using administrative data on Arkansas public school districts. Exploiting variation in the timing and scale of district consolidations, I estimate how merging districts affects per-pupil spending, the allocation of spending between administration and instruction, and measures of operating efficiency. <em>[Draft &mdash; replace this sentence with your actual result once finalized.]</em></p>
+        <p class="entry-detail">This paper studies the fiscal effects of Arkansas&rsquo;s Act 60 school district consolidation mandate using administrative data on Arkansas public school districts. Event-study estimates trace per-pupil spending for 16 years after a merger. General administration spending falls by about $100 by year 16, while instructional staff, transportation, and pupil services spending rise by about $106, $63, and $33. Instruction shows a delayed and noisier decline. Estimates for some categories show marginally significant joint pre-trends, so causal claims for those categories require caution.</p>
         <p class="entry-detail muted small">Presented at AEFP 2026; forthcoming SREE &amp; ABFM 2026.</p>
         <p class="entry-detail small muted">Paper draft on request &mdash; <a href="mailto:sarker@uark.edu">sarker@uark.edu</a></p>
       </div>
+    </div>
+
+    <div class="jmp-figures">
+      <figure>
+        <a href="assets/images/research/jmp-fig-admin-instruction.png"><img src="assets/images/research/jmp-fig-admin-instruction.png" alt="Event-study estimates of general administration and instruction spending per pupil, years 0 to 16 after a merger" loading="lazy"></a>
+        <figcaption><strong>Figure 1.</strong> Administration spending fell steadily after a merger (about &minus;$100 by year 16), while instruction was noisier (about &minus;$197 by year 16). Dots are point estimates; bars are confidence intervals.</figcaption>
+      </figure>
+      <figure>
+        <a href="assets/images/research/jmp-fig-staff-transport-pupil.png"><img src="assets/images/research/jmp-fig-staff-transport-pupil.png" alt="Event-study estimates of instructional staff, transportation, and pupil services spending per pupil, years 0 to 16 after a merger" loading="lazy"></a>
+        <figcaption><strong>Figure 2.</strong> Transportation spending increased (about +$63 by year 16), and instructional staff (about +$106) and pupil services (about +$33) rose and then faded.</figcaption>
+      </figure>
     </div>
   </section>
 

@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261040">
+<link rel="stylesheet" href="style.css?v=20261042">
 </head>
 <body>
 
@@ -30,7 +30,7 @@
   </div>
 </header>
 
-<section class="tc-hero">
+<section class="tc-hero" id="philosophy">
   <div class="tc-hero-in">
     <div class="tc-kick">Teaching philosophy</div>
     <h1>I approach teaching quantitative and policy courses with an emphasis on connecting methods to real policy questions, so that students leave able to both run an analysis and explain what it means for a school, district, or state.</h1>
@@ -43,9 +43,22 @@
   </div>
 </section>
 
-<main class="tc-main">
+<main class="rs-layout tc-main">
+
+  <aside class="rs-side" aria-label="On this page">
+    <div class="rs-side-label">On this page</div>
+    <nav class="rs-idx">
+      <a href="#philosophy" class="on">Philosophy</a>
+      <a href="#feedback">Student feedback</a>
+      <a href="#projects">Real-life projects</a>
+      <a href="#courses">Courses I can teach</a>
+      <a href="#experience">Teaching experience</a>
+    </nav>
+  </aside>
+
+  <div class="rs-content">
   <section>
-    <h2>Student Feedback</h2>
+    <h2 id="feedback">Student Feedback</h2>
     <p class="tc-sub">The comments below are drawn from anonymous end-of-course evaluations I administer after every course I teach.</p>
     <div class="tc-grid3">
       <figure class="tc-quote"><div class="tc-mark" aria-hidden="true">&ldquo;</div><blockquote>Juwel made STATA more accessible and less foreign to me, a serious beginner! He took extra time, in office hours, to painstakingly help me wrap my head around concepts of causality and broader, conceptual research design questions.</blockquote><figcaption><span class="tc-c">Quantitative Analytical Techniques for Education Policy</span><span class="tc-x">Ph.D. student, teaching assistant &middot; University of Arkansas, Fall 2024</span></figcaption></figure>
@@ -55,7 +68,7 @@
   </section>
 
   <section>
-    <h2>Real-Life Project Development &amp; Implementation</h2>
+    <h2 id="projects">Real-Life Project Development &amp; Implementation</h2>
     <p class="tc-sub">In select courses, I require students to design and implement a real-life project &mdash; moving learning beyond the classroom into hands-on execution. Each cohort takes a project from concept to completion: identifying a real need, mobilizing resources, and managing implementation on the ground. Below are some of the initiatives students have brought to life.</p>
     <div class="tc-grid3">
       <article class="tc-proj"><img src="assets/images/teaching/backpacks-collage.jpg" alt="Collage of donated school supplies and students distributing backpacks and books for the Backpacks of Hope project" loading="lazy"><div class="tc-proj-b"><h3>Backpacks of Hope &mdash; &ldquo;Let's Share Your Educare&rdquo;</h3><p>A school-supply and backpack donation initiative providing bags and educational materials to underprivileged children. Students conceptualized the project and managed it end-to-end, from planning to distribution.</p><small>Covered by Ekushey Television (ETV).</small></div></article>
@@ -66,7 +79,7 @@
   </section>
 
   <section>
-    <h2>Courses I Am Prepared to Teach</h2>
+    <h2 id="courses">Courses I Am Prepared to Teach</h2>
     <div class="tc-grid2">
       <div class="tc-crs"><h3>Introduction to Education Policy</h3><p>An introduction to the actors, institutions, and major debates shaping K&ndash;12 and higher education policy in the United States &mdash; from school finance and accountability to teacher labor markets and school choice.</p></div>
       <div class="tc-crs"><h3>Economics of Education</h3><p>Applies core microeconomic tools &mdash; human capital theory, cost-benefit analysis, and market design &mdash; to questions of educational investment, returns to schooling, and the production of student achievement.</p></div>
@@ -78,7 +91,7 @@
   </section>
 
   <section>
-    <h2>Teaching Experience</h2>
+    <h2 id="experience">Teaching Experience</h2>
     <div class="tc-chips" role="group" aria-label="Filter courses by level">
       <button type="button" class="tc-chip on" data-level="all">All levels</button>
       <button type="button" class="tc-chip" data-level="Ph.D.">Ph.D.</button>
@@ -112,6 +125,7 @@
     <p class="small muted">Note: course years/terms above are transcribed as listed on my CV; a couple of dates in the source record overlap and are being verified against university records.</p>
   </section>
 
+  </div>
 </main>
 
 <footer class="site-footer">
@@ -125,6 +139,11 @@
 <script>
 (function(){try{var chips=[].slice.call(document.querySelectorAll('.tc-chip'));var cards=[].slice.call(document.querySelectorAll('.tc-ex'));var insts=[].slice.call(document.querySelectorAll('.tc-inst'));
 chips.forEach(function(c){c.addEventListener('click',function(){var l=c.getAttribute('data-level');chips.forEach(function(x){x.classList.toggle('on',x===c)});cards.forEach(function(e){e.hidden=!(l==='all'||e.getAttribute('data-level')===l)});insts.forEach(function(i){i.hidden=!i.querySelector('.tc-ex:not([hidden])')})})})}catch(e){}})();
+</script>
+<script>
+(function(){try{var links=[].slice.call(document.querySelectorAll('.rs-idx a'));var els=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function spy(){var y=window.scrollY+140,cur=0;els.forEach(function(e,i){if(e&&e.getBoundingClientRect().top+window.scrollY<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}
+window.addEventListener('scroll',spy,{passive:true});spy()}catch(e){}})();
 </script>
 </body>
 </html>

@@ -1187,3 +1187,8 @@ html{scroll-behavior:smooth}
 .tc-hero-in{padding:0 40px}
 .tc-inst + .small{margin-top:26px}
 @media (max-width:900px){.tc-hero-in{padding:0}}
+.tc-main section h2{scroll-margin-top:90px}
+.tc-main .rs-side{padding-top:60px}
+.tc-main section:first-child{margin-top:56px}
+.tc-main .tc-grid3:has(.tc-quote){grid-template-columns:1fr;gap:16px}
+.tc-main .tc-quote blockquote{font-size:16.5px}

@@ -1323,3 +1323,6 @@ html{scroll-behavior:smooth}
 /* Justified body text: Service (Mentorship, University & Departmental) and Research (Work in Progress) */
 .just>p,.just .entry-detail,#in-progress ~ .rs-row .entry-detail,#in-progress ~ .research-card .entry-detail{text-align:justify;hyphens:auto;-webkit-hyphens:auto}
 #in-progress ~ .rs-row .entry-detail.muted,#in-progress ~ .research-card .entry-detail.muted{text-align:left}
+
+/* Research: justified publication summaries (citations stay left-aligned) */
+#publications ~ .entry .entry-detail:not(.muted){text-align:justify;hyphens:auto;-webkit-hyphens:auto}

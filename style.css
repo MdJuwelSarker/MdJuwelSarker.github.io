@@ -573,6 +573,8 @@ p { margin: 0 0 16px; }
 .thumb-entry .entry-thumb.entry-thumb-logo img {
   width: 96px;
   height: 96px;
+  object-fit: contain; /* keep non-square logos (e.g. HSTU) uncropped */
+  background: #fff;
 }
 
 @media (max-width: 480px) {

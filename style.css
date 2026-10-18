@@ -566,6 +566,20 @@ p { margin: 0 0 16px; }
   .thumb-entry .entry-thumb.entry-thumb-lg img { width: 220px; height: 124px; }
 }
 
+.thumb-entry .entry-thumb.entry-thumb-logo {
+  margin: 2px 22px 12px 0;
+}
+
+.thumb-entry .entry-thumb.entry-thumb-logo img {
+  width: 96px;
+  height: 96px;
+}
+
+@media (max-width: 480px) {
+  .thumb-entry .entry-thumb.entry-thumb-logo { float: none; margin-right: 0; }
+  .thumb-entry .entry-thumb.entry-thumb-logo img { width: 72px; height: 72px; }
+}
+
 .entry-gallery {
   display: flex;
   gap: 10px;
